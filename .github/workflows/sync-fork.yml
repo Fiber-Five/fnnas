@@ -15,7 +15,7 @@ jobs:
     steps:
       - name: Sync upstream changes
         uses: tgymnich/fork-sync@v1.8
-        continue-on-error: true  # ← 添加这一行，允许步骤失败
+        # continue-on-error: true  # ← 添加这一行，允许步骤失败
         id: sync
         with:
           owner: ophub
